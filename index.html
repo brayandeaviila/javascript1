@@ -59,6 +59,34 @@
             document.write("Tiene licencia? = " + tieneLicencia + "<br>");
             document.write("Puede conducir? = " + puedeConducir + "<br>");
         </script>
+
+        <h3>Desafio final</h3>
+        <script type="text/javascript">
+            let nombre2 = prompt("Introduce tu nombre:");
+            console.log("Nombre usuario: " + nombre2);
+            document.write("Nombre usuario: " + nombre2 + "<br>");
+
+            let edad2 = prompt("Introduce tu edad:");
+            console.log("Edad usuario: " + edad2);
+            document.write("Edad usuario: " + edad2 + "<br>");
+
+            let esEstudiante2 = confirm("Eres estudiante?");
+            if (esEstudiante2){
+                console.log("El usario es estudiante.");
+                document.write("El usuario es estudiante." + "<br>")
+            } else {
+                console.log("El usario no es un estudiante.");
+                document.write("El usuario no es un estudiante." + "<br>")
+            }
+
+            if(edad2 >= 18 && esEstudiante2){
+                console.log("Tienes derecho al descuento estudiantil");
+                document.write("Tienes derecho al descuento estudiantil" + "<br>");
+            } else {
+                console.log("No tienes derecho al descuento estudiantil");
+                document.write("No tienes derecho al descuento estudiantil" + "<br>");
+            }
+        </script>
     </div>
 </body>
 
